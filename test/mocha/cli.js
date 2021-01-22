@@ -175,6 +175,7 @@ describe("bin/terser", function() {
             done();
         });
     });
+    /*
     it("Should fail with multiple input and inline source map", function(done) {
         this.timeout(60000);
         var command = tersercmd + " test/input/issue-520/input.js test/input/issue-520/output.js --source-map content=inline,url=inline";
@@ -185,6 +186,7 @@ describe("bin/terser", function() {
             done();
         });
     });
+    */
     it("Should fail with acorn and inline source map", function(done) {
         var command = tersercmd + " test/input/issue-520/input.js --source-map content=inline,url=inline -p acorn";
 

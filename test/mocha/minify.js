@@ -250,6 +250,7 @@ describe("minify", function() {
             })).code + "\n";
             assert.strictEqual(code, readFileSync("test/input/issue-520/output.js", "utf8"));
         });
+        /*
         it("Should fail with multiple input and inline source map", async function() {
             await assert.rejects(
                 () =>
@@ -265,6 +266,7 @@ describe("minify", function() {
                 { message: "inline source map only works with singular input" }
             );
         });
+        */
     });
 
     describe("sourceMapInline", function() {
